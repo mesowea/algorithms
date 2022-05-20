@@ -1,5 +1,7 @@
+```python
 import numpy as np
 import graphviz
+```
 
 ## Binary Tree
 
