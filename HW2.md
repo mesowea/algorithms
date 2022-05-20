@@ -5,6 +5,7 @@ import graphviz
 
 ## Binary Tree
 
+```python
 def uniqints(rng=range(1, 100), size=16):
   return np.random.choice(rng, size=size, replace=False)
 class BinaryTree():
@@ -179,23 +180,29 @@ print("Pre Order Traversal", tree.preOrderTraverse())
 
 
 BinaryTree.createGraph(tree)
+```
 
 ![image](https://user-images.githubusercontent.com/72040182/169512627-0b3b65fe-74dc-44a1-b82e-db3ef7157975.png)
 
+```python
 tree.addNode(30)
 print('\nAfter adding an element')
 BinaryTree.createGraph(tree)
+```
 
 ![image](https://user-images.githubusercontent.com/72040182/169512738-9cfa99b9-3b41-4e3a-b42d-f2910dd90d7f.png)
 
+```python
 tree.deleteNode(20)
 print('\nAfter removing an element')
 BinaryTree.createGraph(tree)
+```
 
 ![image](https://user-images.githubusercontent.com/72040182/169512791-fd9c6f12-6aad-40db-993a-377685b5b191.png)
 
 ## R-B tree
 
+```python
 class Node():
   def __init__(self, valu, parent=None, left=None, right=None, color=1):
     self.val = valu
@@ -490,11 +497,13 @@ bst.removeNode(dataset[0])
 print("\ndelete", dataset[0])
 
 bst.print()
+```
 
 ![image](https://user-images.githubusercontent.com/72040182/169512852-62ed20a4-9674-4297-9f94-e968d56b5083.png)
 
 ## Binary Heap
 
+```python
 class BinaryHeap(object):
     def __init__(self):
         self.heap = [0]
@@ -566,9 +575,11 @@ print('insert', 8)
 print(bh)
 print('delete', bh.delete())
 print(bh)
+```
 
 ## Binomial Heap
 
+```python
 from copy import copy
 from random import randint
 
@@ -682,6 +693,7 @@ for valu in uniqints():
 template = binomial_tree.create_dot()
 
 graphviz.Source(template, format="png")
+```
 
 ![image](https://user-images.githubusercontent.com/72040182/169512972-d8b411ca-532f-435e-bbcd-98c2b05707ab.png)
 
@@ -696,6 +708,7 @@ graphviz.Source(template, format="png")
      Якщо K дорівнює 1, лінійний пошук мінімального, що дає результат O(N).
      Якщо K >= N, використати сортування, оскільки в цьому випадку O(NlogN) перевершить O(NlogK).
 
+```python
 import heapq
 
 
@@ -704,6 +717,7 @@ k_smallest = heapq.nsmallest(5, dataset)
 
 print('data', dataset)
 print('k-smallest', k_smallest)
+```
 
 ![image](https://user-images.githubusercontent.com/72040182/169513023-95952bf6-11ab-4cb4-ab89-146f0982f2cb.png)
 
