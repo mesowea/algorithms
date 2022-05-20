@@ -2,6 +2,7 @@ import numpy as np
 import graphviz
 
 ## Binary Tree
+
 def uniqints(rng=range(1, 100), size=16):
   return np.random.choice(rng, size=size, replace=False)
 class BinaryTree():
@@ -165,8 +166,6 @@ class BinaryTree():
         template += f'{self.data} -> right_{self.data};\n'
       
       return template
-
-
 data = uniqints(range(1,25))
 
 print('Data', data)
